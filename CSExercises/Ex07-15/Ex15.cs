@@ -15,6 +15,15 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter a 3 digit number");
+            int N = Convert.ToInt32(Console.ReadLine());
+            int a = N / 100;
+            int b = (N - 100 * a) / 10;
+            int c = (N - 100 * a - 10 * b);
+            int M = a * a * a + b * b * b + c * c * c;
+            if (M == N)
+                Console.WriteLine("The number you gave is an Armstrong Number.");
+            else
+                Console.WriteLine("The number you gave is not an Armstrong Number.");      
         }
     }
 }

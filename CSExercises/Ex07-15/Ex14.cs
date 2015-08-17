@@ -20,7 +20,10 @@ namespace CSExercises
             var c = Convert.ToDouble(Console.ReadLine());
             double s = (a + b + c) * 0.5;
             double AREA = Math.Sqrt(s*(s-a)*(s-b)*(s-c));
-            Console.WriteLine("The area of this triangle is {0}.",AREA);
+            if ((a+b>c)&&(b+c>a)&&(a+c>b))
+                Console.WriteLine("The area of this triangle is {0}.",AREA);
+            else
+                Console.WriteLine("Please enter the correct numbers",AREA);
         }
     }
 }
