@@ -15,15 +15,10 @@ namespace CSExercises
             Console.WriteLine("Enter the distance");
             double distance = Convert.ToDouble(Console.ReadLine());
             double totalfare = 2.40 + 0.4 * distance;
-            double fare = Math.Round(totalfare, 1);
-            if (totalfare <= fare)
-            {
-                Console.WriteLine("The fare is ${0:0.00}.", fare);
-            }
-            else
-            {
-                Console.WriteLine("The fare is ${0:0.00}.", fare + 0.1);
-            }
+            double Totalfare = totalfare * 10;
+            double Fare = Math.Ceiling(Totalfare);
+            double fare = Fare / 10;
+            Console.WriteLine("The fare is ${0:0.00}.",fare);
         }
     }
 }

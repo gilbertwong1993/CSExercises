@@ -27,9 +27,9 @@ namespace CSExercises
                 Console.WriteLine("Good Morning Aunty " + YourName);
             if ((Gender == "F") && (Age < 40) && (Age >= 0))
                 Console.WriteLine("Good Morning Mrs." + YourName);
-            else if ((Gender != "M") && (Gender != "F"))
+            if ((Gender != "M") && (Gender != "F"))
                 Console.WriteLine("Please enter your gender correctly.");
-            else if (Age < 0)
+            if (Age < 0)
                 Console.WriteLine("Please enter your age correctly.");
         }
     }
