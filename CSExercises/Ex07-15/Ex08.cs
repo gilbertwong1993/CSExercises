@@ -17,7 +17,7 @@ namespace CSExercises
             Console.WriteLine("Enter the temperature in Centigrade");
             C = Convert.ToDouble(Console.ReadLine());
             F = 1.8 * C + 32;
-            Console.WriteLine("The temperature in Centigrade is "+F);
+            Console.WriteLine("The temperature in Centigrade is {0}.", F);
         }
     }
 }

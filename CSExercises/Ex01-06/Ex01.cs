@@ -15,7 +15,7 @@ namespace CSExercises
         {
             Console.WriteLine("What's your name?");
             string YourName = Console.ReadLine();
-            Console.WriteLine("Good Morning "+YourName);
+            Console.WriteLine("Good Morning {0}.",YourName);
         }
     }
 }

@@ -15,8 +15,8 @@ namespace CSExercises
             Console.WriteLine("Enter the distance");
             double distance = Convert.ToDouble(Console.ReadLine());
             double totalfare = 2.40 + 0.4 * distance;
-            double fare = Math.Round(totalfare,1);
-            Console.WriteLine("The fare is ${0:0.00}.",fare);
+            double fare = Math.Round(totalfare, 1);
+            Console.WriteLine("The fare is {0:C}.", fare);
         }
     }
 }

@@ -20,16 +20,16 @@ namespace CSExercises
             Console.WriteLine("How old are you?");
             int Age = Convert.ToInt32(Console.ReadLine());
             if ((Gender == "M") && (Age >= 40))
-                Console.WriteLine("Good Morning Uncle " + YourName);
-            if ((Gender == "M") && (Age < 40) && (Age >= 0))
-                Console.WriteLine("Good Morning Mr." + YourName);
-            if ((Gender == "F") && (Age >= 40))
-                Console.WriteLine("Good Morning Aunty " + YourName);
-            if ((Gender == "F") && (Age < 40) && (Age >= 0))
-                Console.WriteLine("Good Morning Mrs." + YourName);
-            if ((Gender != "M") && (Gender != "F"))
+                Console.WriteLine("Good Morning Uncle {0}.", YourName);
+            else if ((Gender == "M") && (Age < 40) && (Age >= 0))
+                Console.WriteLine("Good Morning Mr.{0}.", YourName);
+            else if ((Gender == "F") && (Age >= 40))
+                Console.WriteLine("Good Morning Aunty {0}.", YourName);
+            else if ((Gender == "F") && (Age < 40) && (Age >= 0))
+                Console.WriteLine("Good Morning Mrs.{0}.", YourName);
+            else if ((Gender != "M") && (Gender != "F"))
                 Console.WriteLine("Please enter your gender correctly.");
-            if (Age < 0)
+            else if (Age < 0)
                 Console.WriteLine("Please enter your age correctly.");
         }
     }

@@ -16,13 +16,13 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            double salary,housingallowrance,transportallowrance,total;
+            double salary, housingallowrance, transportallowrance, total;
             Console.WriteLine("Enter the salary");
             salary = Convert.ToDouble(Console.ReadLine());
-            housingallowrance = salary/10;
+            housingallowrance = salary / 10;
             transportallowrance = salary * 0.03;
-            total = salary+housingallowrance+transportallowrance;
-            string A = String.Format("Total income:{0:C}", total);
+            total = salary + housingallowrance + transportallowrance;
+            string A = String.Format("Total income is {0:C}.", total);
             Console.WriteLine(A);
         }
     }

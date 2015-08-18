@@ -14,7 +14,7 @@ namespace CSExercises
             double A;
             Console.WriteLine("Enter a double precision number");
             A = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("The square of the number is " + A * A);  
+            Console.WriteLine("The square of the number is {0}.", A * A);  
         }
     }
 }

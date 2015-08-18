@@ -15,15 +15,15 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter the three sides of a triangle");
-            var a = Convert.ToDouble(Console.ReadLine());
-            var b = Convert.ToDouble(Console.ReadLine());
-            var c = Convert.ToDouble(Console.ReadLine());
+            double a = Convert.ToDouble(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
+            double c = Convert.ToDouble(Console.ReadLine());
             double s = (a + b + c) * 0.5;
-            double AREA = Math.Sqrt(s*(s-a)*(s-b)*(s-c));
-            if ((a+b>c)&&(b+c>a)&&(a+c>b))
+            double AREA = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+            if (a + b > c && b + c > a && a + c > b)
                 Console.WriteLine("The area of this triangle is {0}.",AREA);
             else
-                Console.WriteLine("Please enter the correct numbers",AREA);
+                Console.WriteLine("Please enter the correct numbers.");
         }
     }
 }

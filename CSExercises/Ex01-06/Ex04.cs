@@ -11,11 +11,11 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            double A,B;
+            double A, B;
             Console.WriteLine("Enter a double precision number");
             A = Convert.ToDouble(Console.ReadLine());
             B = System.Math.Sqrt(A);
-            Console.WriteLine("The square of the number is " + B);
+            Console.WriteLine("The square root of the number is {0}.", B);
         }
     }
 }

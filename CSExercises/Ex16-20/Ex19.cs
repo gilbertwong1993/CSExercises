@@ -17,7 +17,7 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the distance.");
+            Console.WriteLine("Enter the distance");
             double dis = Convert.ToDouble(Console.ReadLine());
             double Dis = dis * 10;
             double DIS = Math.Ceiling(Dis);
@@ -25,20 +25,20 @@ namespace CSExercises
             if (distance < 0)
                 Console.WriteLine("**Error**");
             else if (distance <= 0.5 && distance > 0)
-                {
+            {
                 double fare = 2.40;
-                Console.WriteLine("The fare is ${0:0.00}.",fare);
-                }
+                Console.WriteLine("The fare is {0:C}.", fare);
+            }
             else if (distance <= 9 && distance > 0.5)
-                {
+            {
                 double fare = 2.40 + 0.4 * (distance - 0.5);
-                Console.WriteLine("The fare is ${0:0.00}.", fare);
-                }
+                Console.WriteLine("The fare is {0:C}.", fare);
+            }
             else
-                {
+            {
                 double fare = 2.40 + 8.5 * 0.4 + 0.5 * (distance - 9);
-                Console.WriteLine("The fare is ${0:0.00}.", fare);
-                }
+                Console.WriteLine("The fare is {0:C}.", fare);
+            }
         }
     }
 }

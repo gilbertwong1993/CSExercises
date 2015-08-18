@@ -18,10 +18,10 @@ namespace CSExercises
             Console.WriteLine("What's your gender?(M or F assume capital letter)");
             string Gender = Console.ReadLine();
             if (Gender == "M")
-                Console.WriteLine("Good Morning Mr." + YourName);
+                Console.WriteLine("Good Morning Mr.{0}.", YourName);
             else if (Gender == "F")
-                Console.WriteLine("Good Morning Mrs." + YourName);
-            else 
+                Console.WriteLine("Good Morning Mrs.{0}.", YourName);
+            else
                 Console.WriteLine("Please enter your gender correctly.");
         }
     }

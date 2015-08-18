@@ -18,7 +18,7 @@ namespace CSExercises
             double Totalfare = totalfare * 10;
             double Fare = Math.Ceiling(Totalfare);
             double fare = Fare / 10;
-            Console.WriteLine("The fare is ${0:0.00}.",fare);
+            Console.WriteLine("The fare is {0:C}.", fare);
         }
     }
 }

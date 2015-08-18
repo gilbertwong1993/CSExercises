@@ -15,10 +15,10 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter four real values");
-            var x1 = Convert.ToDouble(Console.ReadLine());
-            var y1 = Convert.ToDouble(Console.ReadLine());
-            var x2 = Convert.ToDouble(Console.ReadLine());
-            var y2 = Convert.ToDouble(Console.ReadLine());
+            double x1 = Convert.ToDouble(Console.ReadLine());
+            double y1 = Convert.ToDouble(Console.ReadLine());
+            double x2 = Convert.ToDouble(Console.ReadLine());
+            double y2 = Convert.ToDouble(Console.ReadLine());
             double A = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
             double B = System.Math.Sqrt(A);
             Console.WriteLine("Distance = "+B);

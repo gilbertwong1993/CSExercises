@@ -21,17 +21,17 @@ namespace CSExercises
                 if (fare1 > 5000 && fare1 <= 10000)
                 {
                     double fare2 = fare1 * 0.9 + mp3 * 700;
-                    Console.WriteLine("Total price for this order is ${0}.", fare2);
+                    Console.WriteLine("Total price for this order is {0:C}.", fare2);
                 }
                 else if (fare1 > 10000)
                 {
                     double fare2 = fare1 * 0.85 + mp3 * 700;
-                    Console.WriteLine("Total price for this order is ${0}.", fare2);
+                    Console.WriteLine("Total price for this order is {0:C}.", fare2);
                 }
                 else if (fare1 >= 0 && fare1 < 5000)
                 {
                     double fare2 = fare1 + mp3 * 700;
-                    Console.WriteLine("Total price for this order is ${0}.", fare2);
+                    Console.WriteLine("Total price for this order is {0:C}.", fare2);
                 }
         }
     }

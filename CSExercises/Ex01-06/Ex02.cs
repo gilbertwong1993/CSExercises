@@ -13,7 +13,7 @@ namespace CSExercises
         {
             Console.WriteLine("Enter an integer");
             int A = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The square of the number is "+A*A);
+            Console.WriteLine("The square of the number is {0}.", A * A);
         }
     }
 }

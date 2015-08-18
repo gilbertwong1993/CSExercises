@@ -20,8 +20,7 @@ namespace CSExercises
             Console.WriteLine("Enter the distance");
             double distance = Convert.ToDouble(Console.ReadLine());
             double totalfare = 2.40 + 0.4 * distance;
-            string A = String.Format("Total fare: {0:C}", totalfare);
-            Console.WriteLine(A);
+            Console.WriteLine("Total fare is {0:C}.", totalfare);
         }
     }
 }

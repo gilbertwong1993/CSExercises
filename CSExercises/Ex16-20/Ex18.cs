@@ -22,17 +22,17 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter your mark.");
+            Console.WriteLine("Enter your mark");
             int mark= Convert.ToInt32(Console.ReadLine());
                  if (mark > 79 && mark <= 100)
                      Console.WriteLine("You scored " + mark + " marks which is A grade.");
-                 if (mark > 59 && mark <= 79)
+                 else if (mark > 59 && mark <= 79)
                      Console.WriteLine("You scored " + mark + " marks which is B grade.");
-                 if (mark > 39 && mark <= 59)
+                 else if (mark > 39 && mark <= 59)
                      Console.WriteLine("You scored " + mark + " marks which is C grade.");
-                 if (mark >= 0 && mark <= 39)
+                 else if (mark >= 0 && mark <= 39)
                      Console.WriteLine("You scored " + mark + " marks which is F grade.");
-                 if (mark > 100 || mark <0)
+                 else if (mark > 100 || mark < 0)
                      Console.WriteLine("**Error**");
         }
     }
